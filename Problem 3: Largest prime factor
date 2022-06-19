@@ -1,0 +1,19 @@
+The prime factors of 13195 are 5, 7, 13 and 29.
+What is the largest prime factor of the given number?
+
+
+const largestPrimeFactor=n=>{
+  let prime=2,sum=1;
+  while(prime<=n){
+    if(n%prime==0){
+    sum=prime;
+    n/=prime
+    }
+    else{
+      prime++
+      }
+  }
+  return sum
+}
+
+largestPrimeFactor({n})
